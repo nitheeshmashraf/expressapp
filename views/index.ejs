@@ -1,0 +1,41 @@
+<% include partials/header%>
+        <h1><%= title %></h1>
+
+       
+<!-- <%= errors %> -->
+        <% if(errors!=null){%>
+        <ul>
+            <% errors.forEach(function(error){ %>
+                <li>
+                    <%= error.msg %>
+                </li>
+            <% }) %>
+            
+        </ul>
+        <% } %>
+        <ul>
+            <% persons.forEach(function(person){ %>
+                <li>
+                    <h2>
+                       <%= person.FName +' '+ person.LName  %> <a href="#" class="deleteUser" data-id="<%= person._id %>">Delete</a>
+                    </h2>
+                    <h3><%= person.Age %></h3>
+                </li>
+            <% }) %>
+            
+        </ul>
+
+    <form action="/user/add" method="POST">
+        First name:<br>
+        <input type="text" name="FName">
+        <br>
+        Last name:<br>
+        <input type="text" name="LName">
+        <br>
+        Age:<br>
+        <input type="number" name="Age"><br><br>
+        <input type="submit" value="submit">
+    </form>
+
+    
+<% include partials/footer%>

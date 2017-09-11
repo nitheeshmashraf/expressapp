@@ -1,0 +1,21 @@
+{
+  "name": "expressapp",
+  "version": "1.0.0",
+  "description": "Simple customer app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.7",
+    "express": "*",
+    "express-validator": "^4.1.1",
+    "mongojs": "^2.4.1"
+  },
+  "author": "MAN",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.12.0"
+  }
+}
