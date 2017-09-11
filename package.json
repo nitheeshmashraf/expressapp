@@ -16,6 +16,7 @@
   "author": "MAN",
   "license": "ISC",
   "devDependencies": {
+    "@angular/cli": "^1.4.1",
     "nodemon": "^1.12.0"
   }
 }
